@@ -7,12 +7,12 @@ function validateSyntax() {
     let regex = /pet_[0-9a-z]/gi;
         // Check if input starts with 'pet_' and followed by alphanumeric characters
         if (regex.test(input)) {
-            result = "Valid Syntax";
+            result = "Valid Syntax <span class='valid'></span>";
         } else {
-            result = "Invalid Syntax";
+            result = "Invalid Syntax <span class='invalid'></span>";
         }
 
-            document.getElementById('result').innerText = result;
+            document.getElementById('result').innerHTML = result;
 }
 
 
